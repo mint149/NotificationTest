@@ -11,6 +11,7 @@
 		4C439D38263E5AEE009B6AB1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C439D37263E5AEE009B6AB1 /* ContentView.swift */; };
 		4C439D3A263E5AEF009B6AB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C439D39263E5AEF009B6AB1 /* Assets.xcassets */; };
 		4C439D3D263E5AEF009B6AB1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C439D3C263E5AEF009B6AB1 /* Preview Assets.xcassets */; };
+		4C439D46263E6FDE009B6AB1 /* explosion.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4C439D45263E6FDD009B6AB1 /* explosion.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		4C439D39263E5AEF009B6AB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C439D3C263E5AEF009B6AB1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4C439D3E263E5AEF009B6AB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C439D45263E6FDD009B6AB1 /* explosion.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = explosion.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 		4C439D34263E5AEE009B6AB1 /* NotificationTest */ = {
 			isa = PBXGroup;
 			children = (
+				4C439D45263E6FDD009B6AB1 /* explosion.mp3 */,
 				4C439D35263E5AEE009B6AB1 /* NotificationTestApp.swift */,
 				4C439D37263E5AEE009B6AB1 /* ContentView.swift */,
 				4C439D39263E5AEF009B6AB1 /* Assets.xcassets */,
@@ -126,6 +129,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C439D46263E6FDE009B6AB1 /* explosion.mp3 in Resources */,
 				4C439D3D263E5AEF009B6AB1 /* Preview Assets.xcassets in Resources */,
 				4C439D3A263E5AEF009B6AB1 /* Assets.xcassets in Resources */,
 			);
