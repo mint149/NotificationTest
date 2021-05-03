@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State var selectionDate = Date()
+    @State var notifications : [UNNotification] = []
     var body: some View {
         VStack{
             DatePicker("", selection: $selectionDate)
@@ -39,16 +40,37 @@ struct ContentView: View {
                 
                 // 通知リクエストの作成
                 let request = UNNotificationRequest.init(
-                    identifier: "CalendarNotification",
+                    identifier: "jjfkjkfdj",
                     content: content,
                     trigger: trigger)
-                
+                let request2 = UNNotificationRequest.init(
+                    identifier: "asdkfjlaksjflkj",
+                    content: content,
+                    trigger: trigger)
+
                 // 通知リクエストの登録
                 let center = UNUserNotificationCenter.current()
                 center.add(request)
-                
+                center.add(request2)
+
             }) {
                 Text("セットする")
+            }
+            Divider()
+            Button(action: {
+                let center = UNUserNotificationCenter.current()
+                center.getDeliveredNotifications { (n: [UNNotification]) in
+                    notifications = n
+                    for notification in notifications {
+                        print(notification.request.identifier)
+                    }
+                }
+                
+            }) {
+                Text("取得する")
+            }
+            List(notifications, id:\.request.identifier){ notification in
+                    Text(notification.request.identifier)
             }
         }
     }
